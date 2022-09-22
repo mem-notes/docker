@@ -1,0 +1,7 @@
+docker build -t <name>:<tag> ./Dockerfile
+
+docker login <server>
+
+docker tag <original-image-name>:<original-tag> <server>/<original-image-name>:<dest-tag>
+
+docker push <server>/<original-image-name>:<dest-tag>
